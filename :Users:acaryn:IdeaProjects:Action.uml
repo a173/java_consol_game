@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/acaryn/IdeaProjects/Action</OriginalElement>
+  <nodes>
+    <node x="0.0" y="588.0">ItemStationary</node>
+    <node x="504.42340686274514" y="819.0">Player</node>
+    <node x="1238.893995098039" y="566.0">NPSs</node>
+    <node x="685.8939950980391" y="0.0">Color</node>
+    <node x="1103.893995098039" y="622.5">BadNPS</node>
+    <node x="385.32573529411775" y="0.0">Combo</node>
+    <node x="866.8939950980391" y="588.0">Direction</node>
+    <node x="59.749999999999886" y="55.0">Moveable</node>
+    <node x="1169.1734068627452" y="316.0">NPS</node>
+    <node x="298.6507352941177" y="261.0">Item</node>
+    <node x="758.9356617647057" y="1345.0">Game</node>
+    <node x="909.3939950980391" y="0.0">Command</node>
+    <node x="217.9999999999999" y="599.0">ItemMobile</node>
+    <node x="685.8939950980391" y="610.0">GoodNPS</node>
+    <node x="542.0" y="1345.0">Main</node>
+    <node x="445.8939950980391" y="566.0">Inventory</node>
+    <node x="920.8939950980391" y="771.0">Location</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Combo" target="Item" relationship="TO_ONE">
+      <point x="21.625" y="93.5" />
+      <point x="493.45073529411775" y="219.0" />
+      <point x="551.3507352941177" y="219.0" />
+      <point x="72.20000000000005" y="-126.5" />
+    </edge>
+    <edge source="Item" target="Combo" relationship="TO_MANY">
+      <point x="144.39999999999998" y="-126.5" />
+      <point x="623.5507352941177" y="209.0" />
+      <point x="536.7007352941177" y="209.0" />
+      <point x="64.875" y="93.5" />
+    </edge>
+    <edge source="Location" target="NPSs" relationship="DEPENDENCY">
+      <point x="150.83333333333326" y="-148.5" />
+      <point x="1252.7273284313724" y="750.0" />
+      <point x="1375.393995098039" y="750.0" />
+      <point x="45.5" y="71.5" />
+    </edge>
+    <edge source="ItemMobile" target="Moveable" relationship="TO_ONE">
+      <point x="-66.0" y="-38.5" />
+      <point x="250.9999999999999" y="535.0" />
+      <point x="88.0" y="535.0" />
+      <point x="88.0" y="239.0" />
+      <point x="63.423406862745196" y="239.0" />
+      <point x="63.423406862745196" y="229.0" />
+      <point x="110.74999999999989" y="229.0" />
+      <point x="-51.0" y="38.5" />
+    </edge>
+    <edge source="Inventory" target="Item" relationship="DEPENDENCY">
+      <point x="55.0" y="-71.5" />
+      <point x="610.8939950980391" y="545.0" />
+      <point x="599.484068627451" y="545.0" />
+      <point x="120.33333333333331" y="126.5" />
+    </edge>
+    <edge source="ItemMobile" target="Moveable" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.5" />
+      <point x="316.9999999999999" y="535.0" />
+      <point x="283.2132352941177" y="535.0" />
+      <point x="283.2132352941177" y="239.0" />
+      <point x="235.8112745098038" y="239.0" />
+      <point x="235.8112745098038" y="229.0" />
+      <point x="212.7499999999999" y="229.0" />
+      <point x="51.0" y="38.5" />
+    </edge>
+    <edge source="Inventory" target="Item" relationship="TO_MANY">
+      <point x="-55.0" y="-71.5" />
+      <point x="500.8939950980391" y="545.0" />
+      <point x="435.3939950980391" y="545.0" />
+      <point x="435.3939950980391" y="535.0" />
+      <point x="479.1507352941177" y="535.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="ItemStationary" target="Item" relationship="GENERALIZATION">
+      <point x="66.0" y="-49.5" />
+      <point x="165.0" y="545.0" />
+      <point x="377.41544117647044" y="545.0" />
+      <point x="377.41544117647044" y="535.0" />
+      <point x="358.81740196078437" y="535.0" />
+      <point x="-120.33333333333333" y="126.5" />
+    </edge>
+    <edge source="Game" target="Location" relationship="TO_MANY">
+      <point x="26.875" y="-137.5" />
+      <point x="893.3106617647057" y="1288.0" />
+      <point x="1101.893995098039" y="1288.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="Game" target="Item" relationship="TO_MANY">
+      <point x="-80.625" y="-137.5" />
+      <point x="785.8106617647057" y="1301.0" />
+      <point x="435.3939950980391" y="1301.0" />
+      <point x="435.3939950980391" y="535.0" />
+      <point x="479.1507352941177" y="535.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="ItemMobile" target="Item" relationship="GENERALIZATION">
+      <point x="66.0" y="-38.5" />
+      <point x="382.9999999999999" y="545.0" />
+      <point x="377.41544117647044" y="545.0" />
+      <point x="377.41544117647044" y="535.0" />
+      <point x="358.81740196078437" y="535.0" />
+      <point x="-120.33333333333333" y="126.5" />
+    </edge>
+    <edge source="Location" target="Inventory" relationship="DEPENDENCY">
+      <point x="-90.5" y="-148.5" />
+      <point x="1011.3939950980391" y="740.0" />
+      <point x="610.8939950980391" y="740.0" />
+      <point x="55.0" y="71.5" />
+    </edge>
+    <edge source="ItemStationary" target="Moveable" relationship="DEPENDENCY">
+      <point x="0.0" y="-49.5" />
+      <point x="99.0" y="239.0" />
+      <point x="235.8112745098038" y="239.0" />
+      <point x="235.8112745098038" y="229.0" />
+      <point x="212.7499999999999" y="229.0" />
+      <point x="51.0" y="38.5" />
+    </edge>
+    <edge source="Location" target="Inventory" relationship="TO_ONE">
+      <point x="-150.83333333333348" y="-148.5" />
+      <point x="951.0606617647056" y="750.0" />
+      <point x="558.1734068627452" y="750.0" />
+      <point x="558.1734068627452" y="740.0" />
+      <point x="500.8939950980391" y="740.0" />
+      <point x="-55.0" y="71.5" />
+    </edge>
+    <edge source="Game" target="NPS" relationship="TO_MANY">
+      <point x="80.62500000000003" y="-137.5" />
+      <point x="947.0606617647057" y="1301.0" />
+      <point x="1431.393995098039" y="1301.0" />
+      <point x="1431.393995098039" y="545.0" />
+      <point x="1403.393995098039" y="545.0" />
+      <point x="1403.393995098039" y="535.0" />
+      <point x="1326.6734068627452" y="535.0" />
+      <point x="63.0" y="71.5" />
+    </edge>
+    <edge source="ItemStationary" target="Moveable" relationship="TO_ONE">
+      <point x="-66.0" y="-49.5" />
+      <point x="33.0" y="545.0" />
+      <point x="63.423406862745196" y="545.0" />
+      <point x="63.423406862745196" y="229.0" />
+      <point x="110.74999999999989" y="229.0" />
+      <point x="-51.0" y="38.5" />
+    </edge>
+    <edge source="NPSs" target="NPS" relationship="DEPENDENCY">
+      <point x="-45.5" y="-71.5" />
+      <point x="1284.393995098039" y="545.0" />
+      <point x="1256.393995098039" y="545.0" />
+      <point x="1256.393995098039" y="535.0" />
+      <point x="1263.6734068627452" y="535.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="Location" target="Direction" relationship="TO_MANY">
+      <point x="-30.166666666666742" y="-148.5" />
+      <point x="1071.7273284313724" y="730.0" />
+      <point x="975.3939950980391" y="730.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="NPSs" target="NPS" relationship="TO_MANY">
+      <point x="45.5" y="-71.5" />
+      <point x="1375.393995098039" y="545.0" />
+      <point x="1403.393995098039" y="545.0" />
+      <point x="1403.393995098039" y="535.0" />
+      <point x="1326.6734068627452" y="535.0" />
+      <point x="63.0" y="71.5" />
+    </edge>
+    <edge source="Item" target="Moveable" relationship="DEPENDENCY">
+      <point x="-144.39999999999998" y="-126.5" />
+      <point x="334.7507352941177" y="239.0" />
+      <point x="235.8112745098038" y="239.0" />
+      <point x="235.8112745098038" y="229.0" />
+      <point x="212.7499999999999" y="229.0" />
+      <point x="51.0" y="38.5" />
+    </edge>
+    <edge source="BadNPS" target="NPS" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="1160.893995098039" y="545.0" />
+      <point x="970.9234068627452" y="545.0" />
+      <point x="970.9234068627452" y="535.0" />
+      <point x="1200.6734068627452" y="535.0" />
+      <point x="-63.0" y="71.5" />
+    </edge>
+    <edge source="Location" target="NPS" relationship="DEPENDENCY">
+      <point x="30.166666666666742" y="-148.5" />
+      <point x="1132.0606617647059" y="730.0" />
+      <point x="1228.393995098039" y="730.0" />
+      <point x="1228.393995098039" y="545.0" />
+      <point x="1256.393995098039" y="545.0" />
+      <point x="1256.393995098039" y="535.0" />
+      <point x="1263.6734068627452" y="535.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="Player" target="Location" relationship="TO_ONE">
+      <point x="53.75" y="-225.5" />
+      <point x="665.6734068627452" y="1094.0" />
+      <point x="1101.893995098039" y="1094.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="Location" target="NPSs" relationship="TO_ONE">
+      <point x="90.5" y="-148.5" />
+      <point x="1192.393995098039" y="740.0" />
+      <point x="1284.393995098039" y="740.0" />
+      <point x="-45.5" y="71.5" />
+    </edge>
+    <edge source="Combo" target="Item" relationship="DEPENDENCY">
+      <point x="-21.625" y="93.5" />
+      <point x="450.20073529411775" y="229.0" />
+      <point x="479.1507352941177" y="229.0" />
+      <point x="2.8421709430404007E-14" y="-126.5" />
+    </edge>
+    <edge source="Item" target="Combo" relationship="DEPENDENCY">
+      <point x="-72.19999999999996" y="-126.5" />
+      <point x="-64.875" y="93.5" />
+    </edge>
+    <edge source="Game" target="Player" relationship="TO_ONE">
+      <point x="-26.875" y="-137.5" />
+      <point x="839.5606617647057" y="1288.0" />
+      <point x="611.9234068627452" y="1288.0" />
+      <point x="0.0" y="225.5" />
+    </edge>
+    <edge source="Player" target="Inventory" relationship="TO_ONE">
+      <point x="-53.75" y="-225.5" />
+      <point x="558.1734068627452" y="740.0" />
+      <point x="500.8939950980391" y="740.0" />
+      <point x="-55.0" y="71.5" />
+    </edge>
+    <edge source="GoodNPS" target="NPS" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="766.3939950980391" y="545.0" />
+      <point x="970.9234068627452" y="545.0" />
+      <point x="970.9234068627452" y="535.0" />
+      <point x="1200.6734068627452" y="535.0" />
+      <point x="-63.0" y="71.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="833.0" y="637.0" />
+  <SelectedNodes>
+    <node>Combo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
